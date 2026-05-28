@@ -17,8 +17,8 @@ public class LocadoraVeiculos {
     public void cadastrarVeiculo(Carro carro){
         carros.add(carro);
     }
-    public void realizarEmpréstimo(){
-        
+    public void realizarEmpréstimo(Emprestimo emprestimo){
+        emprestimos.add(emprestimo);
     }
     public Cliente buscarCliente(String telefone){
         for(int i = 0; i < clientes.size(); i++){

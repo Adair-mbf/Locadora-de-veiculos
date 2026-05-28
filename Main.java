@@ -125,7 +125,8 @@ public class Main{
                         String placa = leitor.nextLine();
                         Carro carro = locadoraVeiculos.buscarCarro(placa);
                         if(carro != null){
-
+                            Emprestimo emprestimo = new Emprestimo(cliente, carro);
+                            locadoraVeiculos.realizarEmpréstimo(emprestimo);
                         }
                     }
                     break;
