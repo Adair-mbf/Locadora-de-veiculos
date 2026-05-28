@@ -10,4 +10,8 @@ public abstract class Cliente {
         this.telefone = telefone;
         this.endereco = endereco;
     }
+
+    public String getTelefone() {
+        return telefone;
+    }
 }

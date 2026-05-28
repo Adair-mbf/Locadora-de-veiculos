@@ -17,6 +17,27 @@ public class LocadoraVeiculos {
     public void cadastrarVeiculo(Carro carro){
         carros.add(carro);
     }
+    public void realizarEmpréstimo(){
+
+    }
+    public Cliente buscarCliente(String telefone){
+        for(int i = 0; i < clientes.size(); i++){
+            if(telefone.equals(clientes.get(i).getTelefone())){
+                return clientes.get(i);
+            }
+        }
+        System.out.println("Cliente não encontrado!");
+        return null;
+    }
+    public Carro buscarCarro(String placa){
+        for(int i = 0; i < carros.size(); i++){
+            if(placa.equals(carros.get(i).getPlaca())){
+                return carros.get(i);
+            }
+        }
+        System.out.println("Carro não encontrado!");
+        return null;
+    }
 
     public LocadoraVeiculos(String nome, String endereco, String telefone) {
         this.nome = nome;

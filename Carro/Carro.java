@@ -12,4 +12,8 @@ public abstract class Carro {
         this.ano = ano;
         this.valorLocacao = valorLocacao;
     }
+    public String getPlaca() {
+        return placa;
+    }
+    
 }

@@ -17,7 +17,8 @@ public class Main{
             System.out.println("1 - Cadastrar veículo");
             System.out.println("2 - Cadastrar cliente");
             System.out.println("3 - Realizar um empréstimo de veículo");
-            System.out.println("4 - Finalizar um empréstimo de veículo");
+            System.out.println("4 - Renovar um empréstimo de veículo")
+            System.out.println("5 - Finalizar um empréstimo de veículo");
             System.out.println("0 - Sair");
 
             opcao = leitor.nextByte();
@@ -113,9 +114,12 @@ public class Main{
                     }
                     break;
                 case 3:
-
+                    
                     break;
                 case 4:
+
+                    break;
+                case 5:
 
                     break;
                 default:
