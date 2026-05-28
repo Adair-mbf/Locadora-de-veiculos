@@ -10,4 +10,14 @@ public class CarroSuv extends Carro{
         this.tipoTracao = tipoTracao;
         this.tipoCombustivel = tipoCombustivel;
     }
+
+    @Override
+    public void renovar(){
+        if (qntdRenovacoes > 3) {
+            
+        }
+        else{
+
+        }
+    }
 }

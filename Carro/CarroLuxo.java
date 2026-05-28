@@ -11,6 +11,13 @@ public class CarroLuxo extends Carro{
         this.tamanhoPortaMalas = tamanhoPortaMalas;
         this.possuiGpsIntegrado = possuiGpsIntegrado;
     }
-    
+    @Override
+    public void renovar(){
+        if (this.qntdRenovacoes > 5) {
+            
+        }
+        else{
 
+        }
+    }
 }

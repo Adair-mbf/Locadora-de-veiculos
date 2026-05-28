@@ -6,4 +6,13 @@ public class CarroPopular extends Carro{
         super(marca, modelo, placa, ano, valorLocacao);
         this.possuiArCondicionado = possuiArCondicionado;
     }
+    @Override
+    public void renovar(){
+        if (qntdRenovacoes > 1) {
+            
+        }
+        else{
+
+        }
+    }
 }
