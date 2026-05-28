@@ -17,7 +17,7 @@ public class Main{
             System.out.println("1 - Cadastrar veículo");
             System.out.println("2 - Cadastrar cliente");
             System.out.println("3 - Realizar um empréstimo de veículo");
-            System.out.println("4 - Renovar um empréstimo de veículo")
+            System.out.println("4 - Renovar um empréstimo de veículo");
             System.out.println("5 - Finalizar um empréstimo de veículo");
             System.out.println("0 - Sair");
 
@@ -27,7 +27,7 @@ public class Main{
                 case 0:
                     System.out.println("Saindo...");
                     break;
-                    
+
                 case 1:{
                     System.out.println("Digite a marca do carro:");
                     String marca = leitor.nextLine();
