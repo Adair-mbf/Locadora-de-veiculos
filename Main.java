@@ -27,7 +27,8 @@ public class Main{
                 case 0:
                     System.out.println("Saindo...");
                     break;
-                case 1:
+                    
+                case 1:{
                     System.out.println("Digite a marca do carro:");
                     String marca = leitor.nextLine();
                     System.out.println("Digite o modelo do carro:");
@@ -78,7 +79,8 @@ public class Main{
                             break;
                     }
                     break;
-                case 2:
+                }
+                case 2:{
                     System.out.println("Digite o nome do cliente:");
                     String nome = leitor.nextLine();
                     System.out.println("Digite o telefone do cliente:");
@@ -113,15 +115,26 @@ public class Main{
                             break;
                     }
                     break;
-                case 3:
-                    
+                }
+                case 3:{
+                    System.out.println("Digite o telefone do cliente:");
+                    String telefone = leitor.nextLine();
+                    System.out.println("Digite a placa do carro:");
+                    String placa = leitor.nextLine();
                     break;
-                case 4:
-
+                }
+                case 4:{
+                    System.out.println("Digite a placa do carro:");
+                    String placa = leitor.nextLine();
+                    locadoraVeiculos.buscarCarro(placa);
                     break;
-                case 5:
-
+                }
+                case 5:{
+                    System.out.println("Digite a placa do carro:");
+                    String placa = leitor.nextLine();
+                    locadoraVeiculos.buscarCarro(placa);
                     break;
+                }
                 default:
                     System.out.println("Opção inválida!");
                     break;
