@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+import Carro.Carro;
 import Carro.CarroLuxo;
 import Carro.CarroPopular;
 import Carro.CarroSuv;
@@ -27,7 +28,6 @@ public class Main{
                 case 0:
                     System.out.println("Saindo...");
                     break;
-
                 case 1:{
                     System.out.println("Digite a marca do carro:");
                     String marca = leitor.nextLine();
@@ -119,20 +119,33 @@ public class Main{
                 case 3:{
                     System.out.println("Digite o telefone do cliente:");
                     String telefone = leitor.nextLine();
-                    System.out.println("Digite a placa do carro:");
-                    String placa = leitor.nextLine();
+                    Cliente cliente = locadoraVeiculos.buscarCliente(telefone);
+                    if(cliente != null){
+                        System.out.println("Digite a placa do carro:");
+                        String placa = leitor.nextLine();
+                        Carro carro = locadoraVeiculos.buscarCarro(placa);
+                        if(carro != null){
+
+                        }
+                    }
                     break;
                 }
                 case 4:{
                     System.out.println("Digite a placa do carro:");
                     String placa = leitor.nextLine();
-                    locadoraVeiculos.buscarCarro(placa);
+                    Carro carro = locadoraVeiculos.buscarCarro(placa);
+                    if(carro != null){
+
+                    }
                     break;
                 }
                 case 5:{
                     System.out.println("Digite a placa do carro:");
                     String placa = leitor.nextLine();
-                    locadoraVeiculos.buscarCarro(placa);
+                    Carro carro = locadoraVeiculos.buscarCarro(placa);
+                    if(carro != null){
+
+                    }
                     break;
                 }
                 default:
